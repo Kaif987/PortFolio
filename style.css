@@ -1,0 +1,270 @@
+body{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #202731;
+    color: white;
+    overflow-x: hidden;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+button{
+    border: none;
+    font-family: inherit;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+h1,h2,h3{
+    padding: 0;
+    margin: 0;
+}
+
+ul{
+    list-style: none;
+}
+
+ul > li{
+    font-weight: 600;
+}
+
+ul > li:hover{
+    font-weight: 700;
+    cursor: pointer;
+    transition: 300ms;
+}
+
+nav{
+    justify-content: space-between;
+    padding: 20px 5em;
+    background-color: #3C31DD;
+}
+
+.nav_button{
+    background-color: #7562E0;
+    padding: 1em 1.5em;
+    color: white;
+    border-radius: 1.5em;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    box-shadow: 9px 9px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 9px 9px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 9px 9px 5px 0px rgba(0,0,0,0.75);
+}
+
+.nav_button:hover{
+    font-weight: 700;
+    cursor: pointer;
+    background-color: #6856d2;
+}
+
+.image_container{
+    width: 50%;
+}
+
+.image{
+    width: 400px;
+    background-size: cover;
+    height: 100%;
+}
+
+.description{
+    max-width: 400px;
+    display: inline-block;
+}
+
+.intro{
+    font-size: 40px;
+}
+
+.intro_para{
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+/* Contact Me */
+.contact_input{
+    font-family: inherit;
+    padding: 1em 2em;
+    border-radius: 5px;
+    background-color: #8f0f42;
+    border: none;
+    margin-top: 10px;
+}
+
+
+
+section{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 400px;
+    padding: 100px 10vw;
+}
+
+.btn_container{
+    margin-top: 50px;
+}
+
+.submit_btn{
+    border: none;
+    padding: 1em 2em;
+    border-radius: 4px;
+    font-weight: 600;
+    
+}
+
+.blue {
+    background: #3c31dd;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 20px;
+}
+
+.red {
+background: #dd3f31;
+}
+
+.pink {
+background: #ff0066;
+overflow: hidden;
+}
+
+.dark {
+background: #0f0f10;
+}
+
+.wave1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wave1 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.wave1 .shape-fill {
+    fill: #3C31DD;
+}
+
+.curve{
+    position: absolute;
+    bottom: 0;
+    height: 225px;
+    width: 100%; 
+}
+
+.curve::before{
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 55%;
+    height: 100%;
+    background: #202731;
+    transform: translate(-10%,70%);
+}
+
+.curve::after{
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    border-radius: 100% 50%;
+    width: 55%;
+    height: 100%;
+    background: #3c31dd;
+    transform: translate(5%,40%);
+}
+
+.bubble::after{
+    content: "";
+    border-top-left-radius: 50% 100%;
+    border-top-right-radius: 50% 100%;
+    position: absolute;
+    bottom: 0;
+    height: 50%;
+    width: 100%;
+    background-color: #0f0f10;
+}
+
+.flex{
+    display: flex;
+    gap: 20px;
+}
+
+.flex-col{
+    flex-direction: column;
+}
+
+.wave {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wave svg {
+    position: relative;
+    display: block;
+    width: calc(149% + 1.3px);
+    height: 263px;
+}
+
+.wave .shape-fill {
+    fill: #0f0f10;
+}
+
+.spacer{
+    aspect-ratio: 960/300;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.layer1{
+   background-image: url("./layered-waves-haikei\ \(1\).svg"); 
+}
+
+.layer2{
+    background-image: url("./layered-waves-haikei\ \(2\).svg");
+}
+
+.flip{
+    transform: rotate(180deg);
+}
+
+
+
+@media (max-width:700px) {
+    .name{
+        display: none;
+    }
+
+    nav{
+        padding: 10px 15px;
+    }
+    
+    .blue{
+        flex-direction: column-reverse;
+        gap: 2em;
+    }
+}
