@@ -96,9 +96,12 @@ nav{
     background-color: #8f0f42;
     border: none;
     margin-top: 10px;
+    color: #e3e3e3;
 }
 
-
+.input_form > form{
+    margin-top: 20px;
+}
 
 section{
     position: relative;
@@ -118,7 +121,119 @@ section{
     padding: 1em 2em;
     border-radius: 4px;
     font-weight: 600;
-    
+    background-color: #8f0f42;
+    color: white;
+}
+
+.submit_btn:hover{
+    background-color: white;
+    color: #202731;
+}
+
+.about_me{
+    margin-top: 10em;
+}
+
+.about_me > h1{
+    color: #7562E0;
+    font-size: 2.5em;
+}
+
+.catch_phrase{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.catch_phrase > p{
+    font-size: 24px;
+}
+
+.years{
+    font-size: 96px;
+    font-weight: bold;
+    color: #7562E0;
+}
+
+.years::after{
+    content: "+";
+    margin-left: .2em;
+}
+
+.major{
+    display: flex;
+    width: 100%;
+    margin-top: 2em;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card{
+    height: 250px;
+    gap: 2em;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 5px solid black;
+    border-radius: 1em;
+    padding: 2em 1em;
+}
+
+.card > h1{
+    color: #7562E0;
+}
+
+.card > svg{
+    height: 50%;
+}
+
+.services{
+    display: grid;
+    gap: 1em;
+    margin-top: 2em;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.work_div{
+    margin-top: 5em;
+}
+
+.works{
+    margin-top: 3em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+}
+
+.works img{
+    width: 100%;
+}
+
+.footer{
+    padding: 1em 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.roles{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+.social{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.social svg{
+    width: 35px;
+    height: 35px;
 }
 
 .blue {
@@ -192,17 +307,6 @@ background: #0f0f10;
     transform: translate(5%,40%);
 }
 
-.bubble::after{
-    content: "";
-    border-top-left-radius: 50% 100%;
-    border-top-right-radius: 50% 100%;
-    position: absolute;
-    bottom: 0;
-    height: 50%;
-    width: 100%;
-    background-color: #0f0f10;
-}
-
 .flex{
     display: flex;
     gap: 20px;
@@ -266,5 +370,21 @@ background: #0f0f10;
     .blue{
         flex-direction: column-reverse;
         gap: 2em;
+    }
+    .contact_div{
+        flex-direction: column;
+    }
+
+    .major{
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    .services{
+        grid-template-columns: 1fr;
+    }
+
+    .works{
+        grid-template-columns: 1fr;
     }
 }
