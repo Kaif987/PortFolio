@@ -168,6 +168,11 @@ section{
     align-items: center;
 }
 
+
+.major_desc h1{
+    color: white !important;
+}
+
 .card{
     height: 250px;
     gap: 2em;
@@ -185,6 +190,7 @@ section{
     color: #7562E0;
 }
 
+
 .card > svg{
     height: 50%;
 }
@@ -197,7 +203,16 @@ section{
 }
 
 .work_div{
-    margin-top: 5em;
+    margin-top: 7em;
+}
+
+.work_div > h1{
+    font-size: 3em;
+    padding: 1em;
+}
+
+.work_div h1{
+
 }
 
 .works{
@@ -344,12 +359,12 @@ background: #0f0f10;
     background-size: cover;
 }
 
-.layer1{
-   background-image: url("./layered-waves-haikei\ \(1\).svg"); 
-}
-
 .layer2{
     background-image: url("./layered-waves-haikei\ \(2\).svg");
+}
+
+.layer3{
+    background-image: url("./layered-waves-haikei\ \(3\).svg");
 }
 
 .flip{
