@@ -4,6 +4,13 @@ body{
     background-color: #202731;
     color: white;
     overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body > *{
+    width: 100%;
 }
 
 a{
@@ -39,6 +46,7 @@ ul > li:hover{
     transition: 300ms;
 }
 
+
 nav{
     justify-content: space-between;
     padding: 20px 5em;
@@ -53,6 +61,7 @@ nav{
     font-size: 16px;
     font-weight: 400;
     letter-spacing: 1px;
+    text-align: center;
     box-shadow: 9px 9px 5px 0px rgba(0,0,0,0.75);
     -webkit-box-shadow: 9px 9px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 9px 9px 5px 0px rgba(0,0,0,0.75);
@@ -69,7 +78,7 @@ nav{
 }
 
 .image{
-    width: 400px;
+    width: 400px ;
     background-size: cover;
     height: 100%;
 }
@@ -211,8 +220,9 @@ section{
     padding: 1em;
 }
 
-.work_div h1{
-
+.contact_div{
+    display: flex;
+    gap: 6em;
 }
 
 .works{
@@ -234,14 +244,14 @@ section{
 }
 
 .roles{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
     font-size: 14px;
 }
 
 .social{
     display: flex;
+    justify-content: space-between;
     align-items: center;
     gap: 1em;
 }
@@ -261,11 +271,13 @@ section{
 
 .red {
 background: #dd3f31;
+padding-bottom: 0;
 }
 
 .pink {
 background: #ff0066;
 overflow: hidden;
+padding-bottom: 0;
 }
 
 .dark {
@@ -357,6 +369,7 @@ background: #0f0f10;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    /* height: 300px; */
 }
 
 .layer2{
@@ -386,6 +399,11 @@ background: #0f0f10;
         flex-direction: column-reverse;
         gap: 2em;
     }
+
+    .image{
+        width: 350px;
+    }
+
     .contact_div{
         flex-direction: column;
     }
@@ -401,5 +419,10 @@ background: #0f0f10;
 
     .works{
         grid-template-columns: 1fr;
+    }
+
+    .roles{
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 1em;
     }
 }
